@@ -78,7 +78,28 @@ background:
 radial-gradient(circle at right,#0b6dff33,transparent 40%),
 linear-gradient(#05070d,#05070d);
 }
+.hero{
+    position: relative;
+    overflow: hidden;
+}
 
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("watermark-logo.png") center center / 420px no-repeat,
+        url("chart-bg.png") right center / contain no-repeat;
+
+    opacity: 0.12;
+    z-index: 0;
+}
+
+.hero > *{
+    position: relative;
+    z-index: 1;
+}
 .hero-left{
 max-width:600px;
 }

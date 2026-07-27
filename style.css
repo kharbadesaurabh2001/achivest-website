@@ -162,14 +162,18 @@ position:relative;
 .hero-right::before{
     content:"";
     position:absolute;
-    width:500px;
-    height:500px;
+    right:20px;
+top:50%;
+transform:translateY(-50%);
+pointer-events:none;
+    width:650px;
+    height:650px;
     background:radial-gradient(circle,
         rgba(30,144,255,.30) 0%,
         rgba(30,144,255,.12) 50%,
         transparent 75%);
     border-radius:50%;
-    filter:blur(40px);
+    filter:blur(70px);
     z-index:0;
 }
 

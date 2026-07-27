@@ -1,6 +1,3 @@
-console.log("ACHIVEST Website Loaded");
-// ACHIVEST Website
-
 document.addEventListener("DOMContentLoaded", () => {
     console.log("ACHIVEST Website Loaded");
 });

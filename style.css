@@ -159,14 +159,29 @@ align-items:center;
 flex:1;
 position:relative;
 }
+.hero-right::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,
+        rgba(30,144,255,.30) 0%,
+        rgba(30,144,255,.12) 50%,
+        transparent 75%);
+    border-radius:50%;
+    filter:blur(40px);
+    z-index:0;
+}
 
+.hero-right img{
+    position:relative;
+    z-index:1;
+}
 .hero-right img{
 width:750px;
 max-width:100%;
   margin-left:300px;
-filter:
-drop-shadow(0 0 20px #1e90ff)
-drop-shadow(0 0 60px #1e90ff);
+
 animation: none;
 }
 

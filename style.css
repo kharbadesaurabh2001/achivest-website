@@ -298,3 +298,274 @@ margin-bottom:8px;
 color:#cfd6e4;
 
 }
+/* ===========================
+   HERO RIGHT
+=========================== */
+
+.hero-right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Blue Glow Behind Founder */
+
+.glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#00c6ff;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.35;
+    animation:glowPulse 5s ease-in-out infinite;
+}
+
+/* Founder Image */
+
+.hero-right img{
+    width:520px;
+    max-width:100%;
+    position:relative;
+    z-index:2;
+    animation:floatImage 5s ease-in-out infinite;
+    filter:drop-shadow(0 0 30px rgba(0,198,255,.8))
+           drop-shadow(0 0 70px rgba(0,198,255,.45));
+}
+
+/* Floating Animation */
+
+@keyframes floatImage{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Glow Pulse */
+
+@keyframes glowPulse{
+
+0%{
+transform:scale(.95);
+opacity:.25;
+}
+
+50%{
+transform:scale(1.1);
+opacity:.45;
+}
+
+100%{
+transform:scale(.95);
+opacity:.25;
+}
+
+}
+
+/* Social Icons */
+
+.socials{
+
+position:fixed;
+
+right:35px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+z-index:999;
+
+}
+
+.socials a{
+
+width:50px;
+
+height:50px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+font-size:20px;
+
+text-decoration:none;
+
+transition:.35s;
+
+backdrop-filter:blur(15px);
+
+}
+
+.socials a:hover{
+
+background:#00c6ff;
+
+transform:scale(1.15);
+
+box-shadow:0 0 25px #00c6ff;
+
+}
+
+/* Hero Text Animation */
+
+.hero-left h1 span{
+
+opacity:0;
+
+display:block;
+
+animation:slideUp .8s forwards;
+
+}
+
+.hero-left h1 span:nth-child(1){
+
+animation-delay:.2s;
+
+}
+
+.hero-left h1 span:nth-child(2){
+
+animation-delay:.5s;
+
+}
+
+.hero-left h1 span:nth-child(3){
+
+animation-delay:.8s;
+
+}
+
+@keyframes slideUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Paragraph Fade */
+
+.description{
+
+opacity:0;
+
+animation:fadeIn 1s forwards;
+
+animation-delay:1s;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/* Buttons Animation */
+
+.hero-buttons{
+
+opacity:0;
+
+animation:fadeIn 1s forwards;
+
+animation-delay:1.3s;
+
+}
+
+/* Stats Animation */
+
+.stats{
+
+opacity:0;
+
+animation:fadeIn 1s forwards;
+
+animation-delay:1.6s;
+
+}
+
+/* Image Fade */
+
+.hero-right img{
+
+opacity:0;
+
+animation:
+floatImage 5s ease-in-out infinite,
+fadeFounder 1.2s forwards;
+
+animation-delay:0s,1s;
+
+}
+
+@keyframes fadeFounder{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

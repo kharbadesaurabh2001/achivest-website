@@ -89,7 +89,7 @@ linear-gradient(#05070d,#05070d);
     inset: 0;
 
     background:
-        url("watermark-logo.png") center center / 420px no-repeat,
+        url("logo.png") center center / 420px no-repeat,
         url("chart-bg.png") right center / contain no-repeat;
 
     opacity: 0.12;

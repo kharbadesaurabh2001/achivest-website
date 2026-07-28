@@ -69,11 +69,12 @@ font-weight:600;
 }
 
 .hero{
-min-height:100vh;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:120px 8%;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    overflow:hidden;
+    padding:120px 8%;
 background:
 radial-gradient(circle at right,#0b6dff33,transparent 40%),
 linear-gradient(#05070d,#05070d);

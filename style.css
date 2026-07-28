@@ -159,23 +159,6 @@ align-items:center;
 flex:1;
 position:relative;
 }
-.hero-right::before{
-    content:"";
-    position:absolute;
-    right:120px;
-top:50%;
-transform:translateY(-50%);
-pointer-events:none;
-    width:900px;
-    height:900px;
-    background:radial-gradient(circle,
-        rgba(30,144,255,.45) 0%,
-        rgba(30,144,255,.12) 50%,
-        transparent 75%);
-    border-radius:50%;
-    filter:blur(70px);
-    z-index:1;
-}
 
 .hero-right img{
     position:relative;
@@ -185,7 +168,11 @@ pointer-events:none;
 width:750px;
 max-width:100%;
   margin-left:300px;
-
+filter:
+    drop-shadow(0 0 2px rgba(0,174,255,.95))
+    drop-shadow(0 0 8px rgba(0,174,255,.75))
+    drop-shadow(0 0 18px rgba(0,174,255,.50))
+    drop-shadow(0 0 30px rgba(0,174,255,.25));
 animation: none;
 }
 
